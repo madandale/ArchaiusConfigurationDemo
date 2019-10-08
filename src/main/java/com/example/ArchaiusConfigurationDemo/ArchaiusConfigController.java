@@ -16,7 +16,7 @@ public class ArchaiusConfigController {
     = DynamicPropertyFactory.getInstance()
     .getStringProperty("my.archaius.properties.one", "not found!");
    
-  @GetMapping("/property-from-dynamic-management")
+  @GetMapping("/DynamicProperty")
   public String getPropertyValue() {
   return propertyOneWithDynamic.getName() + ": " + propertyOneWithDynamic.get();
   }

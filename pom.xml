@@ -16,6 +16,8 @@
 
 		<properties>
 		<java.version>1.8</java.version>
+ <spring-cloud-dependencies.version>2.0.1.RELEASE</spring-cloud-dependencies.version>
+        <junit.platform.version>1.2.0</junit.platform.version>		
 	</properties>
 	
 	
@@ -25,13 +27,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 <dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-archaius</artifactId>
-    <version>1.4.7.RELEASE</version>
-</dependency>
-
+  <groupId>com.netflix.archaius</groupId>
+  <artifactId>archaius-core</artifactId>
+  <version>0.6.0</version>
+ </dependency>
+    
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
